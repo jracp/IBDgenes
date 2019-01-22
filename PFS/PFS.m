@@ -5,7 +5,7 @@
 % jra066 [AT] mun [DOT] ca | www.cs.mun.ca/~jra066
 
 % Input: A dataset
-% Output: Selected feautres and the resulting classification accuracy using PFS
+% Output: Selected feautres using PFS and the resulting classification accuracy 
 
 warning off;
 global data;
@@ -35,11 +35,6 @@ orgData = data;
 data = data(1:floor(.7 * r), :);
 [r, c] = size(data);
 splitData = data;
-
-%===============================Imputing===============================
-%if(sum(isnan(data(:))) > 0)
-%    data = knnimpute(data);
-%end
 
 %===========================Data Prepration============================
 allF = c - 1;
@@ -144,7 +139,6 @@ for run = 1:runIter
             centroid(cl) = idxs(tmpIdx);
         end
         
-%         centroid = centroid((centroid > 0));
         centroid = remainF(centroid((centroid > 0)));
         
         out{(run - 1) * clusters + cluster, 1} = centroid';
