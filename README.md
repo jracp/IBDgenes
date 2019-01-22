@@ -8,7 +8,7 @@ date: '21/01/19'
 The code `PFS.m` selects the most relevant and independant genes associated to Inflammatory Bowel Disease (IBD). If you need more details and explanation about the algorithm, please contact [Javad Rahimipour Anaraki](http://www.cs.mun.ca/~jra066/) or [Hamid Usefi](http://www.math.mun.ca/~usefi/). 
 
 ## Use case
-To determine the most important features using the algorithm described in "Study of Genes Associated with Inflammatory Bowel Disease using Feature Selection" by Javad Rahimipour Anaraki, Hanieh Marvi Khorasani and Hamid Usefi
+To determine the most important features using the algorithm described in "Study of Genes Associated with Inflammatory Bowel Disease using Feature Selection" by Javad Rahimipour Anaraki, Hanieh Marvi Khorasani and Hamid Usefi submitted to [36th International Conference on Machine Learning (ICML 2019)](https://icml.cc/Conferences/2019)
 
 Here is a link to the paper: will be updated soon
 
