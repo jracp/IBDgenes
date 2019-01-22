@@ -5,7 +5,7 @@
 % jra066 [AT] mun [DOT] ca | www.cs.mun.ca/~jra066
 
 % Input: Selected features
-% Output: Classification accuracy using different classifier
+% Output: Classification accuracy using SVM
 
 function clsOut = cAccInner(selF)
 
@@ -18,11 +18,7 @@ test = data(trainSize+1:end, selF);
 nClass = length(unique(data(:, end)));
 
 %%==============================Classifiers================================
-%Model = fitctree(train(:, 1:end-1), train(:, end));
 Model = fitcecoc(train(:, 1:end-1), train(:, end));
-%Model = fitcknn(train(:, 1:end-1), train(:, end));
-%Model = fitcnb(train(:, 1:end-1), train(:, end));
-
 predicted = predict(Model, test(:, 1:end-1));
 
 %%========================Classification Accuracy==========================
