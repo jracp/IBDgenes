@@ -11,7 +11,7 @@ warning off;
 global data;
 
 %%=============================Parameters==================================
-runIter = 2;
+runIter = 10;
 cu = 100000;
 cl = 1000000;
 clMethod = 0; %0 for kMeans and 1 for cMeans
@@ -20,14 +20,14 @@ clMethod = 0; %0 for kMeans and 1 for cMeans
 tic
 disp(['Loading GDS1615_full ...']);
 
-data = readLargeCSV('../../Datasets/GDS1615_full.csv');
+data = readLargeCSV('../Datasets/GDS1615_full.csv');
 
 %data = data(data(:, end) ~= 1, :); %Normal and Crohn
 %data = data(data(:, end) ~= 2, :); %Normal and Ulcerative
 %data = data(data(:, end) ~= 0, :); %Ulcerative and Crohn
 
-features = readtable('../../Datasets/GDS1615_features.csv');
-chrom = readtable('../../Datasets/GDS1615_chrom.csv');
+features = readtable('../Datasets/GDS1615_features.csv');
+chrom = readtable('../Datasets/GDS1615_chrom.csv');
 [r, ~] = size(data);
 
 %==============================Splitting===============================
