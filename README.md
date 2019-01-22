@@ -16,7 +16,7 @@ Here is a link to the paper: will be updated soon
 This code can be run using MATLAB R2006a and above
 
 ## Run
-To run the code, open `PFS.m` and choose a dataset to apply the method to. The code strats reading the selected dataset using `readLargeCSV.m` written by [Cedric Wannaz](https://www.mathworks.com/matlabcentral/profile/authors/1078046-cedric-wannaz). Then it rank features and returns resulting classification accuracy by `cAcc.m` using SVM classifier. The IBD dataset is downloaded from GEO under accession number [GSE3365]().
+To run the code, open `PFS.m` and choose a dataset to apply the method to. The code strats reading the selected dataset using `readLargeCSV.m` written by [Cedric Wannaz](https://www.mathworks.com/matlabcentral/profile/authors/1078046-cedric-wannaz). Then it rank features and returns resulting classification accuracy by `cAcc.m` using SVM classifier. The IBD dataset is downloaded from GEO under accession number [GSE3365](https://www.ncbi.nlm.nih.gov/pubmed/16436634).
 
 ## Note
  - Dataset should have no column and/or row names, and the class values should be all numeric
